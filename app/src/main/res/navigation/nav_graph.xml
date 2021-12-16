@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/LoadingPotsFragment">
+
+    <fragment
+        android:id="@+id/LoadingPotsFragment"
+        android:name="com.example.smartpot.LoadingPotsFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_loading_pots">
+
+        <action
+            android:id="@+id/action_LoadingPotsFragment_to_PotListFragment"
+            app:destination="@id/PotListFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_LoadingPotsFragment_to_LoadingErrorFragment"
+            app:destination="@id/LoadingErrorFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/PotListFragment"
+        android:name="com.example.smartpot.PotListFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_pot_list">
+
+        <action
+            android:id="@+id/action_PotListFragment_to_LoadingErrorFragment"
+            app:destination="@id/LoadingErrorFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/LoadingErrorFragment"
+        android:name="com.example.smartpot.LoadingErrorFragment"
+        android:label="LoadingErrorFragment" >
+        <action
+            android:id="@+id/action_LoadingErrorFragment_to_LoadingPotsFragment"
+            app:destination="@id/LoadingPotsFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

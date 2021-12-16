@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_connect"
+    app:startDestination="@id/LoadAvailableFragment">
+
+    <fragment
+        android:id="@+id/LoadAvailableFragment"
+        android:name="com.example.smartpot.LoadAvailableFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_load_available">
+
+        <action
+            android:id="@+id/action_LoadAvailableFragment_to_ListAvailableFragment"
+            app:destination="@id/ListAvailableFragment"
+            app:popUpTo="@id/nav_graph_connect"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/ListAvailableFragment"
+        android:name="com.example.smartpot.ListAvailableFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_list_available"/>
+</navigation>
