@@ -23,7 +23,7 @@
             android:id="@+id/icon"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:src="@drawable/ic_glyphicons_basic_961_cloud_off"
+            android:src="@drawable/ic_cloud_with_slash_solid"
             app:tint="@color/material_on_surface_emphasis_medium"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

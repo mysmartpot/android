@@ -86,7 +86,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Offline"
-                        app:chipIcon="@drawable/ic_glyphicons_basic_961_cloud_off"
+                        app:chipIcon="@drawable/ic_cloud_with_slash_solid"
                         app:chipIconTint="#D50000" />
 
                     <com.google.android.material.chip.Chip
@@ -94,7 +94,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Moist"
-                        app:chipIcon="@drawable/ic_glyphicons_basic_378_plant"
+                        app:chipIcon="@drawable/ic_seedling_solid"
                         app:chipIconTint="#2E7D32" />
 
                     <com.google.android.material.chip.Chip
@@ -102,7 +102,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Full"
-                        app:chipIcon="@drawable/ic_glyphicons_basic_93_drop"
+                        app:chipIcon="@drawable/ic_droplet_solid"
                         app:chipIconTint="#2196F3" />
                 </com.google.android.material.chip.ChipGroup>
             </android.widget.HorizontalScrollView>

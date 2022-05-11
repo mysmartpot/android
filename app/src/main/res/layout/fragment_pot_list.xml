@@ -22,7 +22,7 @@
             android:layout_width="160dp"
             android:layout_height="160dp"
             android:alpha="0.25"
-            android:src="@drawable/ic_glyphicons_basic_378_plant"
+            android:src="@drawable/ic_seedling_solid"
             android:tint="@color/design_default_color_primary" />
 
         <TextView
