@@ -23,7 +23,7 @@ import java.util.List;
 
 public abstract class HubApi {
 
-    public static String HUB_URL = "http://192.168.42.51:5000";
+    public static String HUB_URL = "http://smart-pot-hub.local:5000";
     public static TypeReference<Void> NO_CONTENT = new TypeReference<Void>() {};
 
     public interface SuccessCallback<T> {
