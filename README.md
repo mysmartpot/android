@@ -4,7 +4,7 @@ This repository contains the source code for the Android app for the Smart Pot.
 
 ## Requirements
 
-To use the app, there needs you need to be on the same WiFi network as the [Smart Pot Hub][smart-pot/hub] or connect to the network via VPN.
+To use the app, you need to be on the same WiFi network as the [Smart Pot Hub][smart-pot/hub] or connect to the network via VPN.
 For the app to be able to resolve the address of the Hub, the hostname of the Raspberry Pi must have been set to `smart-pot-hub` as described in the [OS Configuration][smart-pot/hub/os-configuration] guide.
 
 The app requires Android 12 or higher since mDNS is used to resolve the address.
